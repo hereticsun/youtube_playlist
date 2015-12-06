@@ -33,16 +33,16 @@
 }
 
 .breadcrumbs {
-	padding: 0 15px;
+	padding: em(24,16) 15px;
 	margin-bottom: em(48,16);
+	background-color: $brand-primary;
 }
 
 .breadcrumb__link {
-	color: $text-color;
-	@include transition(all 0.4s ease);
+	color: #FFFFFF;
 
 	&:hover{
-    	color: $hover-color;
+    	color: #FFFFFF;
     }
 }
 
