@@ -10,9 +10,9 @@ app
 * Layout should match the provided wireframes
 * We encourage you to use a Framework for this, our preference would be AngularJS
 * Supports the following browser matrix
-* * Chrome (2 versions back)
-* * Firefox (2 versions back)
-* * Safari (2 versions back)
-* * IE9+
+  * Chrome (2 versions back)
+  * Firefox (2 versions back)
+  * Safari (2 versions back)
+  * IE9+
 * Must be built using HTML, CSS and JavaScript (SCSS or Less are encouraged)
 * Work to be hosted on your GIT repository of choice (github, bitbucket etc.)
