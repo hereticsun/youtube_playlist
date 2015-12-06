@@ -513,6 +513,8 @@ p, ul, blockquote, pre, td, th, label {
       display: block;
       float: right;
       width: 50%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
       padding-left: 30px; } }
 
@@ -562,5 +564,7 @@ p, ul, blockquote, pre, td, th, label {
   .video__description {
     width: 50%;
     float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 30px; } }

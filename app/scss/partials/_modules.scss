@@ -27,7 +27,7 @@
 		display: block;
 		float: right;
 		width: 50%;
-		box-sizing: border-box;
+		@include box-sizing(border-box);
 		padding-left: 30px;
 	}
 }
@@ -84,7 +84,7 @@
 	@media(min-width: $md) {
 		width: 50%;
 		float: right;
-		box-sizing: border-box;
+		@include box-sizing(border-box);
 		padding-left: 30px;
 	}
 }
