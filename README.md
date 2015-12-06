@@ -28,3 +28,20 @@ app
 * Pagination
 * Optimisation
 * Anything else you can think of that would benefit this app
+
+## Browser Testing
+Tested on the following browsers:
+* Win/IE11 (Browserstack)
+* Win/IE10 (Browserstack)
+* Win/FF 42 (Browserstack)
+* Win/FF 41 (Browserstack)
+* Win/Chrome 46 (Browserstack)
+* Win/Chrome 45 (Browserstack)
+* Win/Safari 5.1 (Browserstack)
+* Win/Safari 5 (Browserstack)
+* OS X/Safari 9
+* OS X/Safari 8
+* OS X/FF 42
+* OS X/FF 41
+* OS X/Chrome 46
+* OS X/Chrome 45
