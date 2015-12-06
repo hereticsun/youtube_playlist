@@ -1,0 +1,90 @@
+.playlist {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.playlist__video {
+	@include clearfix;
+	padding: em(48,16) 15px;
+
+	&:nth-child(even) {
+		background-color: #f3f4f5;
+	}
+}
+
+.list-item__thumbnail {
+	@media(min-width: $md) {
+		float: left;
+		width: 50%;
+	}
+}
+
+.list-item__excerpt {
+	display: none;
+
+	@media(min-width: ($md)){
+		display: block;
+		float: right;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 30px;
+	}
+}
+
+.breadcrumbs {
+	padding: 0 15px;
+	margin-bottom: em(48,16);
+}
+
+.breadcrumb__link {
+	color: $text-color;
+	@include transition(all 0.4s ease);
+
+	&:hover{
+    	color: $hover-color;
+    }
+}
+
+.video {
+	padding: 0 15px;
+	@include clearfix;
+}
+
+.video__container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	margin-bottom: em(24,16);
+
+	@media(min-width: $md) {
+		width: 50%;
+		padding-bottom: (56.25% / 2);
+		float: left;
+	}
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	iframe {
+		border: none;
+	}
+}
+
+.video__description {
+	@media(min-width: $md) {
+		width: 50%;
+		float: right;
+		box-sizing: border-box;
+		padding-left: 30px;
+	}
+}

@@ -1,0 +1,22 @@
+<header class="l-pageheader" role="banner">
+	<h1 class="pageheader__title">My YouTube Playlist</h1>
+</header>
+
+<ol class="playlist">
+	<li class="playlist__video" ng-repeat="video in videos">
+		<article class="list-item">
+			<header class="list-item__header">
+				<a ng-href="/#/video/{{ video.snippet.position }}" title="{{ video.snippet.title }}">
+					<h2 class="list-item__title">{{ video.snippet.title }}</h2>
+				</a>
+				<p>Published on <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: 'MMM d, yyyy' }}</time></p>
+			</header>
+			<div class="list-item__excerpt">
+				<p>{{ video.snippet.description | limitTo:excerptLength }}{{video.snippet.description.length > excerptLength ? '&hellip;' : ''}}</p>
+			</div>
+			<a ng-href="/#/video/{{ video.snippet.position }}" title="{{ video.snippet.title }}">
+				<img ng-src="{{ video.snippet.thumbnails.medium.url }}" ng-srcset="{{ video.snippet.thumbnails.high.url }} 2x, {{ video.snippet.thumbnails.medium.url }}" alt="{{ video.snippet.title }}" class="list-item__thumbnail" />
+			</a>
+		</article>
+	</li>
+</ol>

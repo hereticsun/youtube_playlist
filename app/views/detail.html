@@ -1,0 +1,16 @@
+<nav class="breadcrumbs" role="navigation">
+	<a ng-href="/#/" title="Back to list of videos" class="breadcrumb__link">&laquo; Back to list of videos</a>
+</nav>
+<article class="video" role="article">
+	<header class="video__header" role="banner">
+		<h1 class="video__title">{{ video.snippet.title }}</h1>
+		<p>Published on <time datetime="{{ video.snippet.publishedAt }}">{{ video.snippet.publishedAt | date: 'MMM d, yyyy' }}</time></p>
+	</header>
+	<div class='video__container'>
+		<iframe ng-src="{{ youTubeSrc }}" allowfullscreen></iframe>
+	</div>
+
+	<div class="video__description">
+		<p ng-bind-html="video.snippet.description | linky"></p>
+	</div>
+</article>

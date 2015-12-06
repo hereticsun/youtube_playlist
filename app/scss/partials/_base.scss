@@ -1,0 +1,77 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+	color: $text-color;
+	background: #282d35;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+p > a {
+	color: $link-color;
+	border-bottom: 1px dotted #ccc;
+	@include transition(all 0.4s ease);
+
+	&:hover{
+    	border-bottom: 1px dotted $hover-color;
+    }
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: italic;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 0.666666667em;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 0.666666667em;
+}
+
+abbr[title] {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+article {
+	ul > li {
+		list-style-type: disc;
+		margin-left: 1em;
+	}
+
+	ol > li {
+		list-style-type: decimal;
+		margin-left: 1.5em;
+	}
+}
+
+.skip-links,
+.screen-reader-text {
+	margin: 0;
+	margin-left: -99999px;
+	line-height: 0;
+	height: 0;
+	display: block;
+	border: none;
+	clear: both;
+}
+
+img {
+	display: block;
+	border: none;
+	width: 100%;
+	height: auto;
+}
+
+@import 'typography';

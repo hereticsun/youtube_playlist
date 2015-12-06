@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300|Open+Sans);
+
+html { font-size: 100%; /* IE hack */ }
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $heading-font-stack;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: capitalize;
+	color: $brand-primary;
+}
+
+body {
+	font-family: $body-font-stack;
+	font-size: 62.5%; /* Reduce to 10px for ease of calculation */
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.l-wrapper {
+	font-size: 1.6em; /* Displayed at 16px */
+	line-height: em(24,16); /* 24px */
+}
+
+p, ul, blockquote, pre, td, th, label {
+	margin: 0;
+	font-size: 1em; /* Displayed at 16px */
+	line-height: em(24,16); /* 24px */
+	margin-bottom: em(24,16); /* 24px */
+}
+
+.pageheader__title,
+.video__title {
+	font-size: 2rem; /* Displayed at 32px */
+	font-weight: 300;
+	line-height: em(36,32); /* Displayed at 36px */
+	margin: 0;
+}
+
+.list-item__title {
+	font-size: 1.5rem; /* Displayed at 24px */
+	font-weight: 900;
+	line-height: 1em; /* Displayed at 24px */
+	margin: 0;
+}
+
+.breadcrumbs {
+	font-size: rem(14);
+	line-height: em(24,14);
+}
