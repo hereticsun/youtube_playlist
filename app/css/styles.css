@@ -523,16 +523,14 @@ p, ul, blockquote, pre, td, th, label {
       padding-left: 30px; } }
 
 .breadcrumbs {
-  padding: 0 15px;
-  margin-bottom: 3em; }
+  padding: 1.5em 15px;
+  margin-bottom: 3em;
+  background-color: #CC181E; }
 
 .breadcrumb__link {
-  color: #1C0000;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  color: #FFFFFF; }
   .breadcrumb__link:hover {
-    color: #CC181E; }
+    color: #FFFFFF; }
 
 .video {
   padding: 0 15px; }
