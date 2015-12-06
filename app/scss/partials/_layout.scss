@@ -2,10 +2,11 @@
 	max-width: 1920px;
 	min-height: 100vh;
 	margin: 0 auto;
-	padding: em(24,16) 0;
+	padding: 0;
 	background-color: #FFFFFF;
 }
 
 .l-pageheader {
-	padding: 0 15px;
+	padding: em(48,16) 15px;
+	background-color: $brand-primary;
 }

@@ -465,6 +465,9 @@ p, ul, blockquote, pre, td, th, label {
   /* Displayed at 36px */
   margin: 0; }
 
+.pageheader__title {
+  color: #FFF; }
+
 .list-item__title {
   font-size: 1.5rem;
   /* Displayed at 24px */
@@ -481,11 +484,12 @@ p, ul, blockquote, pre, td, th, label {
   max-width: 1920px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 0;
   background-color: #FFFFFF; }
 
 .l-pageheader {
-  padding: 0 15px; }
+  padding: 3em 15px;
+  background-color: #CC181E; }
 
 .playlist {
   list-style-type: none;
